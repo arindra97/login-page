@@ -1,0 +1,140 @@
+body {
+  background-color: #ccc;
+}
+
+main {
+  padding: 10% 5%;
+  margin: 5% auto;
+  width: 60%;
+  heigth: auto;
+  border: 1px solid #ccc;
+  border-radius: 3%;
+  display: flex;
+  background-color: #fff;
+}
+
+main .hero {
+  text-align: center;
+  width: 50%;
+}
+
+main .hero img{
+  width: 100%;
+}
+
+main .form-header{
+  width: 50%;
+}
+
+main .form-header h2 {
+  font-size:200%;
+}
+
+main .form-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 2em;
+  width: 80%;
+}
+
+.input-container input[type="text"], input[type="password"] {
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 5px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-container .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ccc;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container .label i{
+  color: #000;
+  margin-right:0.5em;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container input[type="text"]:focus ~ .label,
+.input-container input[type="text"]:valid ~ .label,
+.input-container input[type="password"]:focus ~ .label,
+.input-container input[type="password"]:valid ~ .label {
+  top: -20px;
+  left: -20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.input-container input:focus ~ .label i,
+.input-container input:valid ~ .label i{
+  visibility: hidden;
+}
+
+.input-container .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus ~ .underline,
+.input-container input[type="text"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+main .form-login .remember-me input{
+  width: 10%;
+  margin-bottom: 10px;
+}
+
+main .form-login button{
+  margin: 3em 0px;
+  padding: 1.5em;
+  width: 30%;
+  border: 0;
+  color: white;
+  border-radius: 5%;
+  background-color: #00AFFE;
+}
+
+main .form-login input::placeholder {
+  color: #94a3b8;
+}
+
+main .login-with-sosmed{
+  display:flex;
+  width:100%;
+  align-items:center;
+}
+
+main .login-with-sosmed i{ 
+  margin-left:10px;
+}
+
+.fa-facebook-official{
+  color:#2C64F6;
+}
+
+.fa-twitter-square{
+  color:#4D9FEB;
+}
+
+.fa-google-plus-square {
+  color: #f25;
+}
